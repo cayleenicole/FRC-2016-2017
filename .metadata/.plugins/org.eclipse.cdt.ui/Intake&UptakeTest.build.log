@@ -1,0 +1,51 @@
+13:07:45 **** Rebuild of configuration Debug for project Intake&UptakeTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Intake&UptakeTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+../src/Robot.cpp:74:32: error: invalid use of member function (did you forget the '()' ?)
+   while(IsOperatorControl() && IsEnabled){
+                                ^
+In file included from /home/cicada02/wpilib/cpp/current/include/IterativeRobot.h:10:0,
+                 from ../src/Robot.cpp:5:
+../src/Robot.cpp: In function 'int main()':
+/home/cicada02/wpilib/cpp/current/include/RobotBase.h:29:24: error: use of deleted function 'Robot::Robot()'
+     static _ClassName_ robot;                                                \
+                        ^
+../src/Robot.cpp:109:1: note: in expansion of macro 'START_ROBOT_CLASS'
+ START_ROBOT_CLASS(Robot)
+ ^
+../src/Robot.cpp:14:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
+ class Robot: public frc::IterativeRobot {
+       ^
+../src/Robot.cpp:14:7: error: no matching function for call to 'frc::XboxController::XboxController()'
+../src/Robot.cpp:14:7: note: candidate is:
+In file included from ../src/Robot.cpp:11:0:
+/home/cicada02/wpilib/cpp/current/include/XboxController.h:28:12: note: frc::XboxController::XboxController(int)
+   explicit XboxController(int port);
+            ^
+/home/cicada02/wpilib/cpp/current/include/XboxController.h:28:12: note:   candidate expects 1 argument, 0 provided
+../src/Robot.cpp:14:7: error: no matching function for call to 'frc::VictorSP::VictorSP()'
+ class Robot: public frc::IterativeRobot {
+       ^
+../src/Robot.cpp:14:7: note: candidate is:
+In file included from ../src/Robot.cpp:10:0:
+/home/cicada02/wpilib/cpp/current/include/VictorSP.h:19:12: note: frc::VictorSP::VictorSP(int)
+   explicit VictorSP(int channel);
+            ^
+/home/cicada02/wpilib/cpp/current/include/VictorSP.h:19:12: note:   candidate expects 1 argument, 0 provided
+../src/Robot.cpp:14:7: error: no matching function for call to 'frc::DoubleSolenoid::DoubleSolenoid()'
+ class Robot: public frc::IterativeRobot {
+       ^
+../src/Robot.cpp:14:7: note: candidates are:
+In file included from ../src/Robot.cpp:12:0:
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:34:3: note: frc::DoubleSolenoid::DoubleSolenoid(int, int, int)
+   DoubleSolenoid(int moduleNumber, int forwardChannel, int reverseChannel);
+   ^
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:34:3: note:   candidate expects 3 arguments, 0 provided
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:33:12: note: frc::DoubleSolenoid::DoubleSolenoid(int, int)
+   explicit DoubleSolenoid(int forwardChannel, int reverseChannel);
+            ^
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:33:12: note:   candidate expects 2 arguments, 0 provided
+
+13:07:47 Build Finished (took 1s.278ms)
+

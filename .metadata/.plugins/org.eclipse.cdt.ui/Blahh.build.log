@@ -1,0 +1,7 @@
+14:48:49 **** Rebuild of configuration Debug for project Blahh ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Blahh/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+Command canceled
+
+14:48:51 Build Finished (took 2s.306ms)
+

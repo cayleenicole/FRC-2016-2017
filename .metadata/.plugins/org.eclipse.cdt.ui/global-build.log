@@ -1,0 +1,572 @@
+13:22:09 **** Rebuild of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/CaylesTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+Command canceled
+14:42:11 **** Rebuild of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/CaylesTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::RobotInit()':
+../src/Robot.cpp:27:10: warning: unused variable 'driveX' [-Wunused-variable]
+   double driveX = gamePad.GetRawAxis(0);
+          ^
+../src/Robot.cpp:28:10: warning: unused variable 'driveY' [-Wunused-variable]
+   double driveY = gamePad.GetRawAxis(1);
+          ^
+../src/Robot.cpp:29:10: warning: unused variable 'driveRotate' [-Wunused-variable]
+   double driveRotate = gamePad.GetRawAxis(4);
+          ^
+../src/Robot.cpp: In member function 'void Robot::drive()':
+../src/Robot.cpp:82:18: error: 'driveRotate' was not declared in this scope
+   frontRight.Set(driveRotate + driveY + driveX);
+                  ^
+../src/Robot.cpp:82:32: error: 'driveY' was not declared in this scope
+   frontRight.Set(driveRotate + driveY + driveX);
+                                ^
+../src/Robot.cpp:82:41: error: 'driveX' was not declared in this scope
+   frontRight.Set(driveRotate + driveY + driveX);
+                                         ^
+19:29:04 **** Rebuild of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/CaylesTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:70:13: error: 'Wait' was not declared in this scope
+    Wait(0.05);
+             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:115:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+19:29:14 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/CaylesTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:70:13: error: 'Wait' was not declared in this scope
+    Wait(0.05);
+             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:115:2: warning: no return statement in function returning non-void [-Wreturn-type]
+  }
+  ^
+19:29:16 **** Rebuild of configuration Debug for project Mecanum Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include "-I/home/cicada02/workspace/Mecanum Drive/src" -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+19:29:19 **** Rebuild of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+19:38:32 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/CaylesTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:38:35 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+19:40:44 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:40:45 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+19:41:50 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:41:51 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+19:44:04 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:44:05 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+Info: Nothing to build for CaylesTest
+19:52:39 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:52:40 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for CaylesTest
+19:54:28 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:54:28 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+Info: Nothing to build for CaylesTest
+19:55:08 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:55:08 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+19:57:59 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+19:58:00 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+19:59:41 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+19:59:43 **** Incremental Build of configuration Debug for project Mecanum Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+19:59:43 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+20:00:29 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+20:00:30 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+20:01:10 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+20:01:11 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+20:03:18 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+20:03:19 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+20:04:30 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+20:04:31 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+20:14:28 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+20:14:28 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+21:14:04 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+21:14:05 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+21:14:50 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/root/wpilib/cpp/current/lib -L/root/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+Info: Nothing to build for CaylesTest
+Info: Nothing to build for Mecanum Drive
+21:14:51 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+19:41:06 **** Rebuild of configuration Debug for project Test ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Test/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+21:27:09 **** Rebuild of configuration Debug for project Testssss ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Testssss/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+14:39:47 **** Rebuild of configuration Debug for project Bullshit ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Bullshit/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+14:48:49 **** Rebuild of configuration Debug for project Blahh ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Blahh/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+Command canceled
+17:30:27 **** Rebuild of configuration Debug for project Solenoids ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Solenoids/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+17:49:56 **** Rebuild of configuration Debug for project Ayeeeee ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Ayeeeee/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+13:07:35 **** Rebuild of configuration Debug for project Ayeeeee ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Ayeeeee/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+../src/Robot.cpp:90:32: error: invalid use of member function (did you forget the '()' ?)
+   while(IsOperatorControl() && IsEnabled){
+                                ^
+In file included from /home/cicada02/wpilib/cpp/current/include/IterativeRobot.h:10:0,
+                 from ../src/Robot.cpp:5:
+../src/Robot.cpp: In function 'int main()':
+/home/cicada02/wpilib/cpp/current/include/RobotBase.h:29:24: error: use of deleted function 'Robot::Robot()'
+     static _ClassName_ robot;                                                \
+                        ^
+../src/Robot.cpp:205:1: note: in expansion of macro 'START_ROBOT_CLASS'
+ START_ROBOT_CLASS(Robot)
+ ^
+../src/Robot.cpp:18:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
+ class Robot: public frc::IterativeRobot {
+       ^
+../src/Robot.cpp:18:7: error: no matching function for call to 'frc::XboxController::XboxController()'
+../src/Robot.cpp:18:7: note: candidate is:
+In file included from ../src/Robot.cpp:12:0:
+/home/cicada02/wpilib/cpp/current/include/XboxController.h:28:12: note: frc::XboxController::XboxController(int)
+   explicit XboxController(int port);
+            ^
+/home/cicada02/wpilib/cpp/current/include/XboxController.h:28:12: note:   candidate expects 1 argument, 0 provided
+13:07:38 **** Incremental Build of configuration Debug for project CaylesTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/CaylesTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Cayles.o ../src/Cayles.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Cayles.o -lwpi 
+13:07:43 **** Rebuild of configuration Debug for project DropDownTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/DropDownTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/DropDown.o ../src/DropDown.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/DropDown.o -lwpi 
+13:07:45 **** Rebuild of configuration Debug for project Intake&UptakeTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Intake&UptakeTest/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+../src/Robot.cpp:74:32: error: invalid use of member function (did you forget the '()' ?)
+   while(IsOperatorControl() && IsEnabled){
+                                ^
+In file included from /home/cicada02/wpilib/cpp/current/include/IterativeRobot.h:10:0,
+                 from ../src/Robot.cpp:5:
+../src/Robot.cpp: In function 'int main()':
+/home/cicada02/wpilib/cpp/current/include/RobotBase.h:29:24: error: use of deleted function 'Robot::Robot()'
+     static _ClassName_ robot;                                                \
+                        ^
+../src/Robot.cpp:109:1: note: in expansion of macro 'START_ROBOT_CLASS'
+ START_ROBOT_CLASS(Robot)
+ ^
+../src/Robot.cpp:14:7: note: 'Robot::Robot()' is implicitly deleted because the default definition would be ill-formed:
+ class Robot: public frc::IterativeRobot {
+       ^
+../src/Robot.cpp:14:7: error: no matching function for call to 'frc::XboxController::XboxController()'
+../src/Robot.cpp:14:7: note: candidate is:
+In file included from ../src/Robot.cpp:11:0:
+/home/cicada02/wpilib/cpp/current/include/XboxController.h:28:12: note: frc::XboxController::XboxController(int)
+   explicit XboxController(int port);
+            ^
+/home/cicada02/wpilib/cpp/current/include/XboxController.h:28:12: note:   candidate expects 1 argument, 0 provided
+../src/Robot.cpp:14:7: error: no matching function for call to 'frc::VictorSP::VictorSP()'
+ class Robot: public frc::IterativeRobot {
+       ^
+../src/Robot.cpp:14:7: note: candidate is:
+In file included from ../src/Robot.cpp:10:0:
+/home/cicada02/wpilib/cpp/current/include/VictorSP.h:19:12: note: frc::VictorSP::VictorSP(int)
+   explicit VictorSP(int channel);
+            ^
+/home/cicada02/wpilib/cpp/current/include/VictorSP.h:19:12: note:   candidate expects 1 argument, 0 provided
+../src/Robot.cpp:14:7: error: no matching function for call to 'frc::DoubleSolenoid::DoubleSolenoid()'
+ class Robot: public frc::IterativeRobot {
+       ^
+../src/Robot.cpp:14:7: note: candidates are:
+In file included from ../src/Robot.cpp:12:0:
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:34:3: note: frc::DoubleSolenoid::DoubleSolenoid(int, int, int)
+   DoubleSolenoid(int moduleNumber, int forwardChannel, int reverseChannel);
+   ^
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:34:3: note:   candidate expects 3 arguments, 0 provided
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:33:12: note: frc::DoubleSolenoid::DoubleSolenoid(int, int)
+   explicit DoubleSolenoid(int forwardChannel, int reverseChannel);
+            ^
+/home/cicada02/wpilib/cpp/current/include/DoubleSolenoid.h:33:12: note:   candidate expects 2 arguments, 0 provided
+13:07:47 **** Incremental Build of configuration Debug for project Mecanum Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+13:07:48 **** Rebuild of configuration Debug for project PDP CAN Monitoring ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include "-I/home/cicada02/workspace/PDP CAN Monitoring/src" -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+13:07:50 **** Rebuild of configuration Debug for project PossiblyCompetitionReady ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/PossiblyCompetitionReady/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+16:56:23 **** Rebuild of configuration Debug for project Encoder ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Encoder/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 

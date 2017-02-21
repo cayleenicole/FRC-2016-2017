@@ -1,0 +1,7 @@
+19:41:06 **** Rebuild of configuration Debug for project Test ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/home/cicada02/wpilib/cpp/current/include -I/home/cicada02/workspace/Test/src -I/home/cicada02/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+
+19:41:14 Build Finished (took 7s.184ms)
+

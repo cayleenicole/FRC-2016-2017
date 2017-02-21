@@ -1,0 +1,6 @@
+13:07:47 **** Incremental Build of configuration Debug for project Mecanum Drive ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -L/home/cicada02/wpilib/cpp/current/lib -L/home/cicada02/wpilib/user/cpp/lib -Wl,-rpath,/opt/GenICam_v3_0_NI/bin/Linux32_ARM -o FRCUserProgram src/Robot.o -lwpi 
+
+13:07:48 Build Finished (took 460ms)
+

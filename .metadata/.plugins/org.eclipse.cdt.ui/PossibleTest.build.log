@@ -1,0 +1,21 @@
+21:14:51 **** Incremental Build of configuration Debug for project PossibleTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/root/wpilib/cpp/current/include -I/home/cicada02/workspace/PossibleTest/src -I/root/wpilib/user/cpp/include -O0 -Og -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+../src/Robot.cpp:27:3: error: 'boolean' does not name a type
+   boolean dropDownWheelButton;
+   ^
+../src/Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+../src/Robot.cpp:81:15: error: 'Wait' was not declared in this scope
+      Wait(0.05);
+               ^
+../src/Robot.cpp: In member function 'void Robot::Drive()':
+../src/Robot.cpp:101:45: error: expected primary-expression before ')' token
+   if(IsOperatorControl() && IsEnabled() && !)
+                                             ^
+../src/Robot.cpp: In member function 'double Robot::constrain(double, double, double)':
+../src/Robot.cpp:127:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   }
+   ^
+
+21:14:52 Build Finished (took 1s.179ms)
+
